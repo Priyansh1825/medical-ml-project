@@ -2,6 +2,9 @@
 project:
   name: "medical-ml-project"
   version: "1.0.0"
+  author: "Priyansh Patel"
+  university: "Jain University"
+  department: "M.Tech-AI"
   
 data:
   raw_data_path: "data/raw/"
@@ -21,3 +24,12 @@ paths:
   notebooks: "notebooks/"
   src: "src/"
   docs: "docs/"
+  
+mlflow:
+  tracking_uri: "file:./mlflow/mlruns"
+  artifact_location: "./mlflow/artifacts"
+  
+research:
+  student_id: "MTECH_2024"
+  thesis_title: "Medical Machine Learning for Disease Prediction"
+  supervisor: "Dr. Supervisor Name"

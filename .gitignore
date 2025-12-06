@@ -90,8 +90,27 @@ logs/
 *.log
 
 # MLFlow
-mlruns/
+mlflow/mlruns/
+mlflow/artifacts/
 
 # DVC
 .dvc/
 .dvcignore
+
+# Temporary files
+temp/
+*.tmp
+
+# Medical imaging files (large)
+*.dcm
+*.nii
+*.nii.gz
+*.mhd
+*.raw
+
+# VS Code
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace

@@ -1,0 +1,48 @@
+﻿# MLflow Configuration for Medical ML Research
+# M.Tech Project Settings
+
+tracking:
+  # Local file-based tracking (for development)
+  store: "file:./mlflow/mlruns"
+  # For SQL-based tracking (uncomment for production):
+  # store: "sqlite:///mlflow/mlruns.db"
+  
+  # Remote tracking server (for collaboration):
+  # tracking_uri: "http://localhost:5000"
+  
+  # Authentication (if using remote server):
+  # registry_uri: "sqlite:///mlflow/mlruns.db"
+
+artifacts:
+  # Local artifact storage
+  artifact_location: "./mlflow/artifacts"
+  
+  # S3 storage (for large medical datasets):
+  # artifact_location: "s3://your-bucket/mlflow"
+  
+experiments:
+  default_experiment: "medical-research"
+  nested_runs: true
+  
+model_registry:
+  registry_store: "sqlite:///mlflow/model_registry.db"
+  
+ui:
+  host: "127.0.0.1"
+  port: 5000
+  
+logging:
+  log_artifacts: true
+  log_models: true
+  log_input_examples: true
+  
+mtech_research:
+  student_info:
+    name: "M.Tech Student"
+    id: "MTECH_2024"
+    university: "Your University"
+    department: "Computer Science"
+  thesis_info:
+    title: "Advanced Machine Learning for Medical Diagnosis"
+    supervisor: "Dr. Supervisor Name"
+    year: 2024
