@@ -1,0 +1,23 @@
+﻿# Medical ML Project Configuration
+project:
+  name: "medical-ml-project"
+  version: "1.0.0"
+  
+data:
+  raw_data_path: "data/raw/"
+  processed_data_path: "data/processed/"
+  external_data_path: "data/external/"
+  
+model:
+  save_path: "models/"
+  default_algorithm: "random_forest"
+  
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  
+paths:
+  notebooks: "notebooks/"
+  src: "src/"
+  docs: "docs/"
